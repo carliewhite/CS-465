@@ -1,11 +1,7 @@
-const fs = require('fs');
-const trips = JSON.parse(fs.readFileSync('./data/trips.json', 'utf8'));
+const express = require("express");
+const router = express.Router();
+const controller = require("../controllers/travel");
 
-const travel = (req, res) => {
-    pageTitle = process.env.npm_package_description + ' - Travel';
-    res.render('travel', {title: pageTitle, trips});
-};
+router.get("/", controller.travelList);
 
-module.exports = {
-    travel
-}
+module.exports = router;
