@@ -1,8 +1,18 @@
-var express = require('express');
-var router = express.Router();
-const controller = require('../controllers/main');
+const express = require("express");
+const router = express.Router();
 
-/* GET home page. */
-router.get('/', controller.index);
+const tripsController = require("../controllers/trips");
+
+router
+  .route("/trips")
+  .get(tripsController.tripsList)
+  .post(tripsController.tripsAddTrip);
+
+router
+  .route("/trips/:tripCode")
+  .get(tripsController.tripsList)
+  .put(tripsController.tripsUpdateTrip);
+
+router.route("/trips/:tripCode").get(tripsController.tripsFindCode);
 
 module.exports = router;
