@@ -1,3 +1,9 @@
 # CS-465
-Hello! This is my first commit!
-This is another test to ensure it's set up properly.
+### Architecture
+This project allowed me to experience working with Express HTML, JavaScript, and SPA. The backend of the site utilized Node.js and Express in order to serve the website and connect the website to a MongoDB database. NoSQL databases are known for being scalable and can easily adapt to changes. In this project, we also used mongoose to help with data collection and object modeling. The front end application was a SPA create with Angular. Having a SPA allows for faster loading times when navigating the site. 
+### Functionality
+JSON is derived from JavaScript and can be used to store and transport data between a server and a webpage. In this project, we used JSON to create objects that were stored for different requests. These objects were stored in the backend and could be called by the frontend when needed. To imporve effiency, we would replace a lot of hardcoded information with objects that we created which also reduced redundancy. 
+### Testing
+In order to test the functionality and security of this application, I went through a series of tests that covered all the use cases. Depending on which endpoint you're testing, you need to make sure that the data is processed accordingly and that the end user is only seeing what they need to see in order to complete their task. To ensure security while testing, it is important to host the website locally so that if there are any issues, they're handled in a controlled environment.
+### Reflection
+This course allowed me to use many of the skills I have previously learned in other courses, such as object oriented programming and client-server development, and bring them all together create a website. I believe this will help me reach my professional goals because it demonstrates that I have the ability to create a multifaceted program and that I an understanding of full-stack processes and different tools that can be used such as noSQL, Angular, Node.js, and Express. I also got a lot of practice with Git.
